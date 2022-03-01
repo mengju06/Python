@@ -1,3 +1,4 @@
+#查詢個股股價測試
 import twstock
 
 stock = twstock.Stock('2618')
