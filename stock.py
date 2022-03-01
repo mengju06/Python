@@ -50,14 +50,4 @@ while True:
             break
         
     for i in range(600):
-        time.sleep(1)
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        time.sleep(1)     
