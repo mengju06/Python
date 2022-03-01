@@ -1,3 +1,4 @@
+#樂透開獎號碼爬蟲
 import requests
 from bs4 import BeautifulSoup
 url = 'https://www.taiwanlottery.com.tw/'
