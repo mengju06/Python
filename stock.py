@@ -1,3 +1,4 @@
+#股價脫離區間，傳送LINE訊息
 import twstock
 import time
 import requests
@@ -26,7 +27,7 @@ def sendline(mode, realprice, counterLine, token):
         print('發送 LINE訊息失敗')
     return counterLine
 
-token = 'yE9pAeywZi9ByM5tEy8NN8c5zM93GPCTDZLcENxgE5e'
+token = ''          #自己的LINE權杖
 counterLine = 0
 counterError = 0
 
@@ -35,7 +36,7 @@ while True:
     real = twstock.realtime.get('2618')
     if real['success']:
         realprice = real['realtime']['latest_trade_price']
-        if float(realprice) >= 30:
+        if float(realprice) >= 35:
             counterLine = sendline(1, realprice, counterLine, token)
         elif float(realprice) <= 25:
             counterLine = sendline(2, realprice, counterLine, token)
