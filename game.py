@@ -1,3 +1,4 @@
+#用朋友之間話題做的遊戲
 import pygame
 import random
 import os
@@ -19,7 +20,7 @@ health = 100
 pygame.init()
 pygame.mixer.init()
 screen = pygame.display.set_mode((WIDTH,HEIGHT))
-pygame.display.set_caption("有勝尬夢幻")
+pygame.display.set_caption("殺光男同學")
 clock = pygame.time.Clock()
 
 #圖片
